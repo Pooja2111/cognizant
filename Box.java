@@ -1,40 +1,42 @@
-package com;
-
-public class Box {
-    public Box(int length, int width, int height) {
-		super();
-		this.length = length;
-		this.width = width;
-		this.height = height;
-	}
-	int length,width,height;
-	public int getLength() {
-		return length;
-	}
-	public void setLength(int length) {
-		this.length = length;
-	}
-	public int getWidth() {
-		return width;
-	}
-	public void setWidth(int width) {
-		this.width = width;
-	}
-	public int getHeight() {
-		return height;
-	}
-	public void setHeight(int height) {
-		this.height = height;
-	}
-	public int calculateVolume()
-	{
-		return length*width*height;
-	}
-	public static void main(String[] args) {
-		// TODO Auto-generated method stub
- Box b=new Box(10,10,10);
- System.out.println();
- System.out.println(b.calculateVolume());
-	}
-
+class Box
+{
+int boxLength;
+int boxWidth;
+int boxHeight;
+public Box()
+{
+int boxLength=0;
+int boxWidth=0;
+int boxHeight=0;
+}
+public Box(int boxLength,int boxWidth,int boxHeight)
+{
+this.boxLength=boxLength;
+this.boxWidth=boxWidth;
+this.boxHeight=boxHeight;
+}
+void setBox(int boxLength,int boxWidth,int boxHeight)
+{
+this.boxLength=boxLength;
+this.boxWidth=boxWidth;
+this.boxHeight=boxHeight;
+}
+void getBox()
+{
+System.out.println(boxLength+""+boxWidth+""+boxHeight);
+}
+void calculate()
+{
+System.out.println(boxLength*boxWidth*boxHeight);
+}
+}
+class MainBox
+{
+public static void main(String args[])
+{
+Box b=new Box(2,4,5);
+//b.setBox(2,4,3);
+b.getBox();
+b.calculate();
+}
 }

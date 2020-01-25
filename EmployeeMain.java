@@ -1,12 +1,10 @@
-package Employee;
+class EmployeeMain
+{
+public static void main(String args[])
+{
+Employee e=new Employee(1,"sweety",23456);
+//e.setEmployee(1,"pooja",338000);
+e.getEmployee();
+}
 
-public class EmployeeMain{
-
-	public static void main(String args[])
-	{
-		WageEmployee e=new WageEmployee(101,23900,"Pooja","Hyderabad",new Address(21,123,"xyz"),31,34);
-		System.out.println(e.calculate());
-		System.out.println(e);
-	}
-	
 }
