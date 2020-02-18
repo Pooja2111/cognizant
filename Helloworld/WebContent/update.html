@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Update page</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+<body class="bg-info">
+
+<div class="container">
+  <h3>Update Page </h3>
+  
+  <form>
+    <div class="form-group">
+      <label for="usr">Username:</label>
+      <input class="width-50%" type="text" class="form-control" id="usr">
+    </div>
+    <div class="form-group">
+      <label for="pwd">Old password:</label>
+      <input class="width-50%"type="password" class="form-control" id="pwd">
+    </div>
+    <div class="form-group">
+      <label for="pwd">New password:</label>
+      <input class="width-50%"type="password" class="form-control" id="pwd">
+    </div>
+    <div class="form-group">
+      <label for="pwd">Confirm password:</label>
+      <input class="width-50%" type="password" class="form-control" id="pwd">
+    </div>
+    <button type="submit" class="btn btn-success" onclick="myFunction()">Update</button>
+    <p id="demo"></p>
+        <script>
+    function myFunction()
+    {
+    	document.getElementById("demo").innerHTML="Successfully Updated!";
+    }
+    </script>
+  </form>
+</div>
+
+</body>
+</html>

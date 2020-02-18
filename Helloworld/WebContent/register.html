@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Registration Page</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+<body class="bg-info">
+
+<div class="container">
+  <h3>Registration page</h3>
+  <form>
+    <div class="form-group">
+      <label for="usr">Username:</label>
+      <input class="width 50%"type="text" class="form-control" id="usr">
+    </div>
+    <div class="form-group">
+      <label for="pwd">Password:</label>
+      <input class="width 50%"type="password" class="form-control" id="pwd">
+    </div>
+     <div class="form-group">
+      <label for="pwd">Confirm Password:</label>
+      <input class="width 50%" type="password" class="form-control" id="pwd">
+    </div>
+    <div class="form-group">
+      <label for="email">Email:</label>
+      <input class="width 50%"type="email" class="form-control" id="email" placeholder="Enter email" name="email">
+    </div>
+    <div class="form-group">
+      <label for="usr">Address:</label>
+      <input class="width 50%"type="text" class="form-control" id="usr">
+    </div>
+   
+   <div class="dropdown">
+    <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Gender
+    <span class="caret"></span></button>
+    <ul class="dropdown-menu">
+      <li><a href="#">Female</a></li>
+      <li><a href="#">Male</a></li>
+      <li><a href="#">Others</a></li>
+    </ul>
+  </div>
+  <br>
+  <br>
+   <button type="submit" class="btn btn-success" onclick="myFunction()">Submit</button>
+    <p id="demo"></p>
+        <script>
+    function myFunction()
+    {
+    	document.getElementById("demo").innerHTML="Successfully Registered!";
+    }
+    </script>
+  
+  </form>
+</div>
+
+</body>
+</html>
