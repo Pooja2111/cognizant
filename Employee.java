@@ -1,28 +1,27 @@
-class Employee
-{
-int empid;
-String empname;
-int empsalary;
-public Employee()
-{
-int empid=0;
-String empname="0";
-int empsalary=0;
-}
-public Employee(int empid,String empname,int empsalary)
-{
-this.empid=empid;
-this.empname=empname;
-this.empsalary=empsalary;
-}
-/*void setEmployee(int id,String name,int salary)
-{
-empid=id;
-empname=name;
-empsalary=salary;
-}*/
-void getEmployee()
-{
-System.out.println(empid+""+empname+""+empsalary);
-}
-}
+package com;
+
+public class Employee {
+	private int id;  
+	private String firstName,lastName;  
+	  
+	public int getId() {  
+	    return id;  
+	}  
+	public void setId(int id) {  
+	    this.id = id;  
+	}  
+	public String getFirstName() {  
+	    return firstName;  
+	}  
+	public void setFirstName(String firstName) {  
+	    this.firstName = firstName;  
+	}  
+	public String getLastName() {  
+	    return lastName;  
+	}  
+	public void setLastName(String lastName) {  
+	    this.lastName = lastName;  
+	}  
+	  
+	  
+	}  

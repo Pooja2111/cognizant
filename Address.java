@@ -1,43 +1,41 @@
-package Employee;
+package Component;
 
-public class Address {
-	int houseNumber, pinCode;
-	String Street;
+public class Address extends Test {
+	private String city,country;
+	private int pincode;
 
-	@Override
-	public String toString() {
-		return "Address [houseNumber=" + houseNumber + ", pinCode=" + pinCode + ", Street=" + Street + "]";
-	}
 
-	public Address(int houseNumber, int pinCode, String street) {
+	public Address() {
 		super();
-		this.houseNumber = houseNumber;
-		this.pinCode = pinCode;
-		Street = street;
+		// TODO Auto-generated constructor stub
 	}
 
-	public int getHouseNumber() {
-		return houseNumber;
+	public Address(String city, String country, int pincode) {
+		super();
+		this.city = city;
+		this.country = country;
+		this.pincode = pincode;
 	}
 
-	public void setHouseNumber(int houseNumber) {
-		this.houseNumber = houseNumber;
+
+	public String getCity() {
+		return city;
+	}
+	public void setCity(String city) {
+		this.city = city;
+	}
+	public String getCountry() {
+		return country;
+	}
+	public void setCountry(String country) {
+		this.country = country;
+	}
+	public int getPincode() {
+		return pincode;
+	}
+	public void setPincode(int pincode) {
+		this.pincode = pincode;
 	}
 
-	public int getPinCode() {
-		return pinCode;
 	}
 
-	public void setPinCode(int pinCode) {
-		this.pinCode = pinCode;
-	}
-
-	public String getStreet() {
-		return Street;
-	}
-
-	public void setStreet(String street) {
-		Street = street;
-	}
-
-}
